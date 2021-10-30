@@ -1,0 +1,40 @@
+@import "../../variables.module.scss";
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 20px;
+}
+
+.button {
+  display: inline-block;
+
+  min-width: 180px;
+  padding: 8px 16px;
+  border-radius: 2px;
+  border: 0;
+
+  color: #fff;
+  background-color: $base-color;
+  box-shadow: $box-shadow;
+
+  text-align: center;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 500;
+
+  opacity: 1;
+
+  transition: opacity $transition-duration $transition-timing;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+}

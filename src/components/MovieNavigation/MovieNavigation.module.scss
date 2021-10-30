@@ -1,0 +1,27 @@
+@import "../../variables.module.scss";
+
+.list {
+  display: flex;
+}
+
+.item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.link {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  color: currentColor;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  &--active {
+    color: $base-color;
+    font-weight: 500;
+  }
+}
